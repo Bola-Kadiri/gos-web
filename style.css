@@ -1,0 +1,123 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav{
+  width: 100%;
+  padding: 30px 0;
+}
+
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu img{
+  margin-left: 50px;
+  padding-left: 20px;
+}
+.nav-links{
+  margin-right:50px ;
+  padding-right: 20px;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: #000000d8;
+  font-size: 18px;
+}
+.first-section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-section-content{
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.left-content{
+  width: 40%;
+}
+.left-content h1{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.left-content p{
+  font-size: 24px;
+}
+.right-content img{
+  width: 500px;
+}
+
+.second-section-content{
+  width: 100%;
+  min-height: 90vh;
+}
+
+.bg-image{
+  width: 100%;
+  min-height: 90vh;
+  background-image: url("./upcoming-four.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg-image h1{
+  color: #fff;
+  text-align: center;
+}
+.nav-menu .fa-bars{
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+
+@media screen and (max-width: 900px) {
+  .first-section-content{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .left-content{
+    width: 90%;
+  }
+  .left-content h1{
+    margin: 30px 0px;
+  }
+  .left-content p{
+    margin-bottom: 30px;
+  }
+  .nav-menu .fa-bars{
+     display: flex;
+     color: #fff;
+  }
+  
+  .nav-links{
+    margin-right:50px ;
+    padding-right: 20px;
+    width: 40%;
+    display: none;
+    justify-content: space-between;
+  }
+}
